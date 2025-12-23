@@ -162,7 +162,7 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/assets', express.static(path.join(__dirname, '..', 'assets')));
 
 // MongoDB
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/fittracker';
+
 mongoose.connect(MONGO_URI)
 	.then(() => console.log('MongoDB connected'))
 	.catch((err) => console.error('MongoDB connection error:', err));
