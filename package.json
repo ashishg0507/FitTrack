@@ -1,8 +1,9 @@
 {
   "name": "personaltrainer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal Trainer app with Node.js, MongoDB, Redis, Razorpay integration",
+  "main": "server/server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node server/server.js",
     "generate-cert": "node server/generate-cert.js",
@@ -10,10 +11,9 @@
     "seed-exercises": "node server/seedExercises.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["fitness", "trainer", "nodejs", "mongodb", "redis"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-redis": "^9.0.0",
@@ -23,7 +23,8 @@
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.1",
-    "redis": "^5.9.0"
+    "redis": "^5.9.0",
+    "razorpay": "^2.2.0"
   },
   "devDependencies": {
     "selfsigned": "^5.2.0"
